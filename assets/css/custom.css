@@ -207,7 +207,7 @@
 /* Header Adjustments */
 /* Make logo smaller - asking for "podi krnna" */
 .header-logo {
-    max-width: 90px !important; /* Reduced from 120px in style.css */
+    max-width: 70px !important; /* Reduced from 90px to 70px */
 }
 
 .header-logo img {
@@ -217,12 +217,12 @@
 
 /* Reduce header height - "header eke height eka adu karala" */
 .header-grid {
-    padding: 5px 0 !important; /* Overriding default padding to reduce height further */
+    padding: 2px 0 !important; /* Overriding default padding to reduce height further */
 }
 
 /* Adjust header-nav top position if needed because header height changed */
 @media (max-width: 991px) {
     .header-nav {
-        top: 55px; /* Adjusted approximate height */
+        top: 50px; /* Adjusted approximate height */
     }
 }
