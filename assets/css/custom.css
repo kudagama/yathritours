@@ -207,7 +207,7 @@
 /* Header Adjustments */
 /* Make logo smaller - asking for "podi krnna" */
 .header-logo {
-    max-width: 70px !important; /* Reduced from 90px to 70px */
+    max-width:70px !important; /* Reduced from 90px to 70px */
 }
 
 .header-logo img {
