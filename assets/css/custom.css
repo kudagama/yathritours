@@ -1,0 +1,205 @@
+/* Custom styles to override default circular images */
+
+/* Containers: Un-circle and shape */
+/* NOTE: Excluded .user-img container to avoid breaking flex layout of multiple avatars */
+.image-pill,
+.testi-img,
+.product-card .image,
+.country-card .image {
+    border-radius: 12px !important;
+    clip-path: none !important;
+    aspect-ratio: 1 / 1 !important;
+    overflow: hidden !important;
+}
+
+/* Images: Un-circle, shape, and fit */
+.user-img img,
+.image-pill img,
+.testi-img img,
+.product-card .image img,
+.country-card .image img {
+    border-radius: 12px !important;
+    clip-path: none !important;
+    aspect-ratio: 1 / 1 !important;
+    object-fit: cover !important;
+}
+
+/* FIX: Fixed size for testimonial and user images */
+.user-img img,
+.testi-img img {
+    width: 60px !important;
+    height: 60px !important;
+}
+
+/* FIX: Ensure product/destination images fill their container */
+.product-card .image img,
+.image-pill img,
+.country-card .image img {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Country Slider specific adjustments */
+.country-item {
+    padding: 0 10px;
+    /* Add some spacing between slides */
+}
+
+/* FIX: Remove dark overlay from destination cards to make photos vibrant */
+.country-destination .overlay:after {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, rgba(3, 15, 18, 0.6) 100%) !important;
+    /* Ensure the solid color fallback is removed/overridden */
+    background-color: transparent !important;
+}
+
+/* Ensure the text remains readable but the image is clear */
+.country-card .content-box {
+    z-index: 5;
+    position: relative;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    /* Add text shadow for better contrast */
+}
+
+.country-card .heading,
+.country-card .text {
+    color: #fff !important;
+    /* Ensure text is white */
+}
+
+/* FIX: Remove blue underline/decoration from country cards */
+.country-card,
+.country-card:hover,
+.country-card .heading,
+.country-card .text {
+    text-decoration: none !important;
+    border-bottom: none !important;
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* Popular Destinations Slider Styles */
+/* ---------------------------------------------------------------------------------- */
+.popular-destination-slider .swiper-slide {
+    height: auto;
+    /* Allow height to be determined by content */
+}
+
+/* Card Container */
+.destination-card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 450px;
+    /* Fixed height for rectangular shape */
+    width: 100%;
+    display: block;
+    /* Ensure anchor tag takes up full space */
+}
+
+/* Image Styles */
+.destination-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Use cover to fill container without distortion */
+    border-radius: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Hover Effect for Image */
+.destination-card:hover img {
+    transform: scale(1.05);
+    /* Slight zoom on hover */
+}
+
+/* Overlay & Text Styles */
+.destination-card .card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent 100%);
+    /* Subtle dark gradient */
+    color: white;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.destination-card .heading {
+    color: white;
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.destination-card .sub-text {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* Slider Navigation Buttons FIX */
+.popular-destination-slider .swiper-button-next,
+.popular-destination-slider .swiper-button-prev {
+    background-color: #ffffff !important;
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 50% !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+    opacity: 1 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    z-index: 50 !important;
+    /* Position them outside or at edge if needed - normally swiper handles positioning but relative position might be needed */
+}
+
+/* Use standard unicode arrows to ensure visibility without relying on fonts */
+.popular-destination-slider .swiper-button-next:after {
+    content: '\276F' !important;
+    /* Heavy Right-Pointing Angle Bracket */
+    font-family: inherit !important;
+    font-size: 20px !important;
+    color: #000000 !important;
+    font-weight: bold !important;
+}
+
+.popular-destination-slider .swiper-button-prev:after {
+    content: '\276E' !important;
+    /* Heavy Left-Pointing Angle Bracket */
+    font-family: inherit !important;
+    font-size: 20px !important;
+    color: #000000 !important;
+    font-weight: bold !important;
+}
+
+/* Hover effect for buttons */
+.popular-destination-slider .swiper-button-next:hover,
+.popular-destination-slider .swiper-button-prev:hover {
+    background-color: #f0f0f0 !important;
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+.promotion-sticky .promotion-card {
+    background: rgba(0, 64, 84, 1) !important;
+}
+
+.promotion-card .promotion-icon {
+    background-color: #00B7F1 !important;
+}
+
+/* Card Heading saha Anith text sudu pata kirima */
+.promotion-sticky .promotion-card h2,
+.promotion-sticky .promotion-card .heading,
+.promotion-sticky .promotion-card p,
+.promotion-sticky .promotion-card .text {
+    color: #ffffff !important;
+}
+
+.footer-main {
+    background-color: rgba(0, 64, 84, 1) !important;
+    /* variable override : */
+    /* --color-background: rgba(0, 64, 84, 1) !important; */
+}

@@ -1,0 +1,113 @@
+/* ---------------------------------------------------------------------------------- */
+/* How It Works Section */
+/* ---------------------------------------------------------------------------------- */
+.how-it-works-section {
+    /* Main wrapper positions correctly but transparent */
+    background: transparent;
+    padding: 0;
+}
+
+.how-it-works-section .container {
+    background-color: #E8F5E9;
+    /* Light green background applied to container */
+    border-radius: 20px;
+    padding: 60px 40px;
+}
+
+.how-it-works-section .section-title {
+    color: #4A148C;
+    /* Purple/Blue dark text for title as commonly seen in such designs or fallback to dark */
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.process-steps-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    gap: 20px;
+}
+
+/* Dashed Line Background */
+.process-steps-container::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    /* Adjust based on icon size */
+    left: 50px;
+    right: 50px;
+    height: 2px;
+    border-top: 2px dashed #4CAF50;
+    /* Green dashed line */
+    z-index: 1;
+}
+
+.process-step {
+    position: relative;
+    z-index: 2;
+    background: transparent;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-circle {
+    width: 100px;
+    height: 100px;
+    background-color: #25D366;
+    /* Vibrant Green */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 5px solid #E8F5E9;
+    /* Border to break the dashed line visually if z-index doesn't handle it perfectly or for style */
+}
+
+.icon-circle svg,
+.icon-circle i {
+    width: 40px;
+    height: 40px;
+    color: white;
+    /* White icons */
+    fill: white;
+}
+
+.step-number {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.step-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c3e50;
+    line-height: 1.4;
+    max-width: 200px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .process-steps-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .process-steps-container::before {
+        display: none;
+        /* Hide dashed line on mobile/vertical layout */
+    }
+
+    .process-step {
+        width: 100%;
+    }
+}
