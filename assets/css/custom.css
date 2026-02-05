@@ -8,7 +8,7 @@
 .country-card .image {
     border-radius: 12px !important;
     clip-path: none !important;
-    aspect-ratio: 1 / 1 !important;
+    aspect-ratio: 3 / 2 !important;
     overflow: hidden !important;
 }
 
@@ -20,7 +20,7 @@
 .country-card .image img {
     border-radius: 12px !important;
     clip-path: none !important;
-    aspect-ratio: 1 / 1 !important;
+    aspect-ratio: 3 / 2 !important;
     object-fit: cover !important;
 }
 
