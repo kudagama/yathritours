@@ -217,12 +217,12 @@
 
 /* Reduce header height - "header eke height eka adu karala" */
 .header-grid {
-    padding: 10px 0 !important; /* Overriding default padding to reduce height */
+    padding: 5px 0 !important; /* Overriding default padding to reduce height further */
 }
 
 /* Adjust header-nav top position if needed because header height changed */
 @media (max-width: 991px) {
     .header-nav {
-        top: 60px; /* Adjusted approximate height */
+        top: 55px; /* Adjusted approximate height */
     }
 }
