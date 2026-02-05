@@ -203,3 +203,26 @@
     /* variable override : */
     /* --color-background: rgba(0, 64, 84, 1) !important; */
 }
+
+/* Header Adjustments */
+/* Make logo smaller - asking for "podi krnna" */
+.header-logo {
+    max-width: 90px !important; /* Reduced from 120px in style.css */
+}
+
+.header-logo img {
+    height: auto; 
+    width: 100%;
+}
+
+/* Reduce header height - "header eke height eka adu karala" */
+.header-grid {
+    padding: 10px 0 !important; /* Overriding default padding to reduce height */
+}
+
+/* Adjust header-nav top position if needed because header height changed */
+@media (max-width: 991px) {
+    .header-nav {
+        top: 60px; /* Adjusted approximate height */
+    }
+}
