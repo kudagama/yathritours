@@ -8,7 +8,7 @@
 .country-card .image {
     border-radius: 12px !important;
     clip-path: none !important;
-    aspect-ratio: 1 / 1 !important;
+    aspect-ratio: 3 / 2 !important;
     overflow: hidden !important;
 }
 
@@ -20,7 +20,7 @@
 .country-card .image img {
     border-radius: 12px !important;
     clip-path: none !important;
-    aspect-ratio: 1 / 1 !important;
+    aspect-ratio: 3 / 2 !important;
     object-fit: cover !important;
 }
 
@@ -202,4 +202,27 @@
     background-color: rgba(0, 64, 84, 1) !important;
     /* variable override : */
     /* --color-background: rgba(0, 64, 84, 1) !important; */
+}
+
+/* Header Adjustments */
+/* Make logo smaller - asking for "podi krnna" */
+.header-logo {
+    max-width:70px !important; /* Reduced from 90px to 70px */
+}
+
+.header-logo img {
+    height: auto; 
+    width: 100%;
+}
+
+/* Reduce header height - "header eke height eka adu karala" */
+.header-grid {
+    padding: 2px 0 !important; /* Overriding default padding to reduce height further */
+}
+
+/* Adjust header-nav top position if needed because header height changed */
+@media (max-width: 991px) {
+    .header-nav {
+        top: 50px; /* Adjusted approximate height */
+    }
 }
