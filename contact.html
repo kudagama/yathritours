@@ -14,6 +14,7 @@
 
   <script src="assets/js/tailwind-config.js"></script>
   <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="bg-light text-dark antialiased flex flex-col min-h-screen">
@@ -22,7 +23,7 @@
   <div id="header-placeholder"></div>
 
   <!-- Page Title -->
-  <section class="relative pt-32 pb-20 bg-dark text-white text-center">
+  <section class="relative pt-32 pb-20 bg-dark text-white text-center" data-aos="fade-down">
     <h1 class="text-4xl md:text-5xl font-bold uppercase tracking-widest mb-4">Get in Touch</h1>
     <p class="text-lg text-gray-300 font-light max-w-2xl mx-auto">Have questions? We'd love to hear from you. Send us a
       message and we'll respond as soon as possible.</p>
@@ -33,7 +34,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
 
       <!-- Contact Form -->
-      <div class="bg-white p-10 rounded-2xl shadow-xl border border-gray-100">
+      <div class="bg-white p-10 rounded-2xl shadow-xl border border-gray-100" data-aos="fade-up">
         <h3 class="text-2xl font-bold mb-6 text-primary tracking-wide">Send a Message</h3>
         <form class="space-y-6">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -70,7 +71,7 @@
       </div>
 
       <!-- Contact Info -->
-      <div class="space-y-12 py-8">
+      <div class="space-y-12 py-8" data-aos="fade-left" data-aos-delay="200">
         <div>
           <h3 class="text-2xl font-bold mb-6 text-dark tracking-wide">Contact Information</h3>
           <p class="text-gray-500 leading-relaxed max-w-md">
@@ -91,7 +92,7 @@
             </div>
             <div class="ml-6">
               <h4 class="text-lg font-bold text-dark mb-1">Our Location</h4>
-              <p class="text-gray-500">No81, Sella Road,<br>Kataragama 91400, Sri Lanka</p>
+              <p class="text-gray-500">No: 310 Katugastota Rd,<br>Kandy 20000</p>
             </div>
           </div>
 
@@ -106,7 +107,8 @@
             </div>
             <div class="ml-6">
               <h4 class="text-lg font-bold text-dark mb-1">Phone Number</h4>
-              <p class="text-gray-500 hover:text-primary transition-colors"><a href="tel:0777472567">0777472567</a></p>
+              <p class="text-gray-500 hover:text-primary transition-colors"><a href="tel:0777472567">077 747 2567</a>
+              </p>
               <p class="text-xs text-gray-400 mt-1">Mon - Sat, 8am - 5pm</p>
             </div>
           </div>
@@ -123,7 +125,7 @@
             <div class="ml-6">
               <h4 class="text-lg font-bold text-dark mb-1">Email Address</h4>
               <p class="text-gray-500 hover:text-primary transition-colors"><a
-                  href="mailto:yathritours@email.com">yathritours@email.com</a></p>
+                  href="mailto:support@siliconradonnetworks.com">support@siliconradonnetworks.com</a></p>
             </div>
           </div>
         </div>
@@ -132,10 +134,19 @@
     </div>
   </section>
 
+  <!-- Map Section -->
+  <section class="h-96 w-full relative z-0" data-aos="zoom-in">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12648.338029272332!2d81.3323497!3d6.4137532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae6ad667232243d%3A0xc47e30d17d84f881!2sKataragama%2C%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1645000000000!5m2!1sen!2slk"
+      width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
   <!-- Footer -->
   <div id="footer-placeholder"></div>
   <script src="assets/js/components.js"></script>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 1000, once: true });</script>
 </body>
 
 </html>

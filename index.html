@@ -16,6 +16,7 @@
 
   <script src="assets/js/tailwind-config.js"></script>
   <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="bg-light text-gray-800 antialiased font-sans">
@@ -29,12 +30,12 @@
     <!-- Background Image with Parallax Effect -->
     <div class="absolute inset-0 z-0">
       <!-- Ensure bg.jpg exists in yathritours folder (moved from banner) -->
-      <img src="assets/img/yathritours/bg.jpg" alt="Sri Lanka Landscape"
-        class="w-full h-full object-cover scale-105 animate-[pulse_10s_ease-in-out_infinite]">
-      <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60"></div>
+      <img src="assets/img/yathritours/index1.jpg" alt="Sri Lanka Landscape"
+        class="w-full h-full object-cover scale-105">
+      <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/70"></div>
     </div>
 
-    <div class="relative z-10 text-center px-4 max-w-5xl mx-auto mt-16">
+    <div class="relative z-10 text-center px-4 max-w-5xl mx-auto mt-16" data-aos="fade-down" data-aos-duration="1500">
       <span
         class="inline-block py-1 px-3 rounded-full bg-white/20 backdrop-blur-sm text-white text-xs font-bold tracking-widest uppercase mb-6 border border-white/30 animate-[fadeInDown_1s_ease-out]">
         Welcome to Sri Lanka
@@ -129,7 +130,8 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Card 1: Sigiriya -->
-        <div class="group relative overflow-hidden rounded-3xl cursor-pointer h-[450px]">
+        <div class="group relative overflow-hidden rounded-3xl cursor-pointer h-[450px]" data-aos="fade-up"
+          data-aos-delay="100">
           <img src="assets/img/yathritours/sigiriya.jpg" alt="Sigiriya"
             class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
           <div
@@ -153,7 +155,8 @@
         </div>
 
         <!-- Card 2 (Large): Mirissa -->
-        <div class="group relative overflow-hidden rounded-3xl cursor-pointer h-[450px] lg:col-span-2 md:col-span-1">
+        <div class="group relative overflow-hidden rounded-3xl cursor-pointer h-[450px] lg:col-span-2 md:col-span-1"
+          data-aos="fade-up" data-aos-delay="200">
           <img src="assets/img/yathritours/mirissa.jpg" alt="Beaches"
             class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
           <div
@@ -178,7 +181,8 @@
         </div>
 
         <!-- Card 3: Yala -->
-        <div class="group relative overflow-hidden rounded-3xl cursor-pointer h-[450px]">
+        <div class="group relative overflow-hidden rounded-3xl cursor-pointer h-[450px]" data-aos="fade-up"
+          data-aos-delay="300">
           <img src="assets/img/yathritours/yala.jpg" alt="Wildlife"
             class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
           <div
@@ -319,7 +323,7 @@
           </ul>
         </div>
 
-        <div class="relative">
+        <div class="relative" data-aos="fade-left">
           <img src="assets/img/yathritours/unawatuna.jpg" alt="Travel Happy"
             class="rounded-3xl shadow-2xl skew-y-3 hover:skew-y-0 transition-transform duration-500 w-full object-cover h-[600px]">
           <div
@@ -397,6 +401,8 @@
   <script src="assets/js/components.js"></script>
 
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 1000, once: true });</script>
 </body>
 
 </html>

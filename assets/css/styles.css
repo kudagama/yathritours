@@ -11,10 +11,35 @@
 
 /* Animations */
 @keyframes pulse {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: .5;
-    }
+    0%, 100% {opacity: 1;}
+    50% {opacity: .5;}
+}
+
+/* Custom Hover Effects */
+.hover-scale {
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Smooth Fade In */
+[data-aos="fade-up"] {
+    transform: translate3d(0, 10px, 0); /* Reduced movement for elegance */
+}
+
+/* Image Hover Zoom */
+.card-img-container {
+    overflow: hidden;
+    border-radius: 1rem;
+}
+.card-img-container img {
+    transition: transform 0.7s ease;
+}
+.card-img-container:hover img {
+    transform: scale(1.1);
 }

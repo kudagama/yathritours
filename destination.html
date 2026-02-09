@@ -14,6 +14,7 @@
 
   <script src="assets/js/tailwind-config.js"></script>
   <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="bg-light text-dark antialiased flex flex-col min-h-screen">
@@ -22,7 +23,7 @@
   <div id="header-placeholder"></div>
 
   <!-- Page Title -->
-  <section class="relative pt-32 pb-20 bg-dark text-white text-center">
+  <section class="relative pt-32 pb-20 bg-dark text-white text-center" data-aos="fade-down">
     <h1 class="text-4xl md:text-5xl font-bold uppercase tracking-widest mb-4">Our Destinations</h1>
     <p class="text-lg text-gray-300 font-light max-w-2xl mx-auto">Explore hand-picked tour packages designed to showcase
       the beauty of Sri Lanka.</p>
@@ -34,7 +35,8 @@
 
       <!-- Card 1 -->
       <div
-        class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 group">
+        class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 group"
+        data-aos="fade-up" data-aos-delay="100">
         <div class="relative h-64 overflow-hidden">
           <img src="assets/img/yathritours/yala.jpg" alt="Wildlife Safari"
             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
@@ -58,7 +60,8 @@
 
       <!-- Card 2 -->
       <div
-        class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 group">
+        class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 group"
+        data-aos="fade-up" data-aos-delay="200">
         <div class="relative h-64 overflow-hidden">
           <img src="assets/img/yathritours/mirissa.jpg" alt="Beach Holiday"
             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
@@ -82,7 +85,8 @@
 
       <!-- Card 3 -->
       <div
-        class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 group">
+        class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 group"
+        data-aos="fade-up" data-aos-delay="300">
         <div class="relative h-64 overflow-hidden">
           <img src="assets/img/yathritours/ella.jpg" alt="Hill Country"
             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
@@ -106,7 +110,8 @@
 
       <!-- Card 4 -->
       <div
-        class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 group">
+        class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 group"
+        data-aos="fade-up" data-aos-delay="400">
         <div class="relative h-64 overflow-hidden">
           <img src="assets/img/yathritours/kandytemple.jpg" alt="Ancient Cities"
             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
@@ -135,6 +140,8 @@
   <div id="footer-placeholder"></div>
   <script src="assets/js/components.js"></script>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 1000, once: true });</script>
 </body>
 
 </html>

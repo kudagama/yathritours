@@ -62,22 +62,22 @@ const footerHTML = `
           <h4 class="text-lg font-bold mb-6 text-white border-b-2 border-primary inline-block pb-2">Contact Info</h4>
           <ul class="space-y-4 text-gray-300">
             <li class="flex items-start gap-3">
-              <span class="text-primary mt-1">📍</span> No81, Sella Road, Kataragama 91400, Sri Lanka
+              <span class="text-primary mt-1">📍</span> No: 310 Katugastota Rd, Kandy 20000
             </li>
             <li class="flex items-center gap-3">
-              <span class="text-primary">📞</span> <a href="tel:0777472567" class="hover:text-white">0777472567</a>
+              <span class="text-primary">📞</span> <a href="tel:0777472567" class="hover:text-white">077 747 2567</a>
             </li>
             <li class="flex items-center gap-3">
-              <span class="text-primary">✉️</span> <a href="mailto:yathritours@email.com"
-                class="hover:text-white">yathritours@email.com</a>
+              <span class="text-primary">✉️</span> <a href="mailto:support@siliconradonnetworks.com"
+                class="hover:text-white">support@siliconradonnetworks.com</a>
             </li>
           </ul>
         </div>
       </div>
       <div
-        class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-        <p>&copy; 2026 Yathri Tours. All rights reserved.</p>
-        <div class="flex space-x-6 mt-4 md:mt-0">
+        class="border-t border-white/10 pt-8 flex flex-col items-center text-sm text-gray-500 text-center">
+        <p class="mb-4">&copy; 2026 All Rights Reserved | Yathri Tours (Pvt) Ltd | Designed & Developed by Silicon Radon Networks (Pvt) Ltd</p>
+        <div class="flex space-x-6">
           <a href="#" class="hover:text-white transition-colors">Instagram</a>
           <a href="#" class="hover:text-white transition-colors">Facebook</a>
           <a href="#" class="hover:text-white transition-colors">Twitter</a>
@@ -88,37 +88,37 @@ const footerHTML = `
 `;
 
 function renderComponents() {
-    const headerPlaceholder = document.getElementById('header-placeholder');
-    const footerPlaceholder = document.getElementById('footer-placeholder');
+  const headerPlaceholder = document.getElementById('header-placeholder');
+  const footerPlaceholder = document.getElementById('footer-placeholder');
 
-    if (headerPlaceholder) {
-        headerPlaceholder.innerHTML = headerHTML;
-        highlightActiveLink();
-    }
-    
-    if (footerPlaceholder) {
-        footerPlaceholder.innerHTML = footerHTML;
-    }
+  if (headerPlaceholder) {
+    headerPlaceholder.innerHTML = headerHTML;
+    highlightActiveLink();
+  }
+
+  if (footerPlaceholder) {
+    footerPlaceholder.innerHTML = footerHTML;
+  }
 }
 
 function highlightActiveLink() {
-    const currentPage = window.location.pathname.split("/").pop() || 'index.html';
-    const links = document.querySelectorAll('nav a, #mobile-menu a');
-    
-    links.forEach(link => {
-        const linkPage = link.getAttribute('href');
-        if (linkPage === currentPage) {
-            link.classList.remove('text-gray-800', 'font-medium');
-            link.classList.add('text-primary', 'font-bold');
-        }
-    });
+  const currentPage = window.location.pathname.split("/").pop() || 'index.html';
+  const links = document.querySelectorAll('nav a, #mobile-menu a');
+
+  links.forEach(link => {
+    const linkPage = link.getAttribute('href');
+    if (linkPage === currentPage) {
+      link.classList.remove('text-gray-800', 'font-medium');
+      link.classList.add('text-primary', 'font-bold');
+    }
+  });
 }
 
 function toggleMobileMenu() {
-    const menu = document.getElementById('mobile-menu');
-    if (menu) {
-        menu.classList.toggle('hidden');
-    }
+  const menu = document.getElementById('mobile-menu');
+  if (menu) {
+    menu.classList.toggle('hidden');
+  }
 }
 
 // Run on load
