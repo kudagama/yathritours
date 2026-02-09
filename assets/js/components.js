@@ -27,19 +27,24 @@ const headerHTML = `
     </div>
     
     <!-- Mobile Menu (Hidden by default) -->
-    <div class="md:hidden hidden bg-white border-t border-gray-100 absolute w-full left-0 top-full shadow-lg" id="mobile-menu">
-        <div class="flex flex-col p-4 space-y-4">
-            <a href="index.html" class="text-gray-800 font-medium uppercase tracking-wider text-sm hover:text-primary transition-colors">Home</a>
-            <a href="destination.html" class="text-gray-800 font-medium uppercase tracking-wider text-sm hover:text-primary transition-colors">Destination</a>
-            <a href="about.html" class="text-gray-800 font-medium uppercase tracking-wider text-sm hover:text-primary transition-colors">About Us</a>
-            <a href="contact.html" class="text-gray-800 font-medium uppercase tracking-wider text-sm hover:text-primary transition-colors">Contact</a>
+    <div class="md:hidden hidden bg-white/95 backdrop-blur-xl border-t border-gray-100 absolute w-full left-0 top-full shadow-2xl transition-all duration-300 origin-top" id="mobile-menu">
+        <div class="flex flex-col p-6 space-y-6 text-center">
+            <a href="index.html" class="text-gray-800 font-bold uppercase tracking-widest text-sm hover:text-primary transition-colors py-2 border-b border-gray-50">Home</a>
+            <a href="destination.html" class="text-gray-800 font-bold uppercase tracking-widest text-sm hover:text-primary transition-colors py-2 border-b border-gray-50">Destination</a>
+            <a href="about.html" class="text-gray-800 font-bold uppercase tracking-widest text-sm hover:text-primary transition-colors py-2 border-b border-gray-50">About Us</a>
+            <a href="contact.html" class="text-gray-800 font-bold uppercase tracking-widest text-sm hover:text-primary transition-colors py-2 border-b border-gray-50">Contact</a>
+            
+            <a href="contact.html"
+              class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-sm font-bold rounded-full shadow-lg text-white bg-primary hover:bg-secondary focus:outline-none transition-all duration-300 transform hover:-translate-y-1 w-full">
+              Book Your Trip
+            </a>
         </div>
     </div>
 </header>
 `;
 
 const footerHTML = `
-<footer class="bg-dark text-white py-16 border-t border-white/10">
+<footer class="bg-dark text-white py-12 md:py-16 border-t border-white/10">
     <div class="container mx-auto px-6 max-w-7xl">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
         <div class="col-span-1 md:col-span-2">
