@@ -1,0 +1,20 @@
+/* Custom Styles */
+.text-stroke {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+    color: transparent;
+}
+
+.text-stroke-hover:hover {
+    -webkit-text-stroke: 0;
+    color: #C8552D;
+}
+
+/* Animations */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .5;
+    }
+}

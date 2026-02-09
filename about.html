@@ -12,61 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['"Jost"', 'Futura', 'sans-serif'],
-                    },
-                    colors: {
-                        primary: '#C8552D',
-                        secondary: '#3A6342',
-                        accent: '#007791',
-                        dark: '#1B3A28',
-                        light: '#FAF9F6',
-                        white: '#FFFFFF',
-                    }
-                }
-            }
-        }
-    </script>
+    <script src="assets/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body class="bg-light text-dark antialiased flex flex-col min-h-screen">
 
-    <!-- Header -->
-    <header class="fixed w-full top-0 left-0 bg-white shadow-md z-50">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center max-w-7xl">
-            <a href="index.html" class="flex items-center">
-                <img src="assets/img/yathritours/logo.png" alt="Yathritours Logo" class="h-10 w-auto">
-            </a>
-            <nav class="hidden md:flex space-x-8 items-center">
-                <a href="index.html"
-                    class="text-dark font-medium uppercase tracking-wider text-sm hover:text-primary transition-colors duration-300">Home</a>
-                <a href="destination.html"
-                    class="text-dark font-medium uppercase tracking-wider text-sm hover:text-primary transition-colors duration-300">Destination</a>
-                <a href="about.html"
-                    class="text-primary font-bold uppercase tracking-wider text-sm hover:text-primary transition-colors duration-300">About
-                    Us</a>
-                <a href="contact.html"
-                    class="text-dark font-medium uppercase tracking-wider text-sm hover:text-primary transition-colors duration-300">Contact</a>
-            </nav>
-            <div class="hidden md:block">
-                <a href="contact.html"
-                    class="bg-primary text-white px-6 py-2 rounded-full font-medium tracking-wide uppercase text-sm hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
-                    Book Now
-                </a>
-            </div>
-            <!-- Mobile Menu Button -->
-            <button class="md:hidden text-dark focus:outline-none">
-                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
-                    </path>
-                </svg>
-            </button>
-        </div>
-    </header>
+    <!-- Navigation -->
+    <div id="header-placeholder"></div>
 
     <!-- Page Title -->
     <section class="relative pt-32 pb-20 bg-dark text-white text-center">
@@ -174,19 +127,9 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-12 border-t-4 border-primary mt-auto">
-        <div class="container mx-auto px-6 max-w-7xl md:flex md:justify-between md:items-center">
-            <div class="mb-6 md:mb-0">
-                <img src="assets/img/yathritours/logo.png" alt="Yathritours Logo"
-                    class="h-10 w-auto mb-4 brightness-0 invert">
-                <p class="text-gray-400 text-sm">© 2026 Yathri Tours. All rights reserved.</p>
-            </div>
-            <div class="flex space-x-6">
-                <a href="#" class="text-gray-400 hover:text-primary transition-colors">Privacy Policy</a>
-                <a href="#" class="text-gray-400 hover:text-primary transition-colors">Terms of Service</a>
-            </div>
-        </div>
-    </footer>
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+    <script src="assets/js/components.js"></script>
 
 </body>
 
