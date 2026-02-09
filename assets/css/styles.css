@@ -27,19 +27,49 @@
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
-/* Smooth Fade In */
-[data-aos="fade-up"] {
-    transform: translate3d(0, 10px, 0); /* Reduced movement for elegance */
+/* Premium UI Enhancements */
+html {
+    scroll-behavior: smooth;
 }
 
-/* Image Hover Zoom */
+/* Glassmorphism Card */
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+}
+
+/* Text Gradient */
+.text-gradient {
+    background: linear-gradient(to right, #C8552D, #FF8C42); /* Terracotta to Orange */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Hero Overlay Gradient */
+.hero-overlay {
+    background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.6) 100%);
+}
+
+/* Button Glow */
+.btn-glow:hover {
+    box-shadow: 0 0 20px rgba(200, 85, 45, 0.6);
+}
+
+/* Smooth Fade In */
+[data-aos="fade-up"] {
+    transform: translate3d(0, 30px, 0);
+}
+
+/* Image Hover Zoom - Refined */
 .card-img-container {
     overflow: hidden;
-    border-radius: 1rem;
+    border-radius: 1.5rem; /* More rounded */
 }
 .card-img-container img {
-    transition: transform 0.7s ease;
+    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .card-img-container:hover img {
-    transform: scale(1.1);
+    transform: scale(1.15);
 }
