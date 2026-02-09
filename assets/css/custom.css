@@ -226,3 +226,57 @@
         top: 50px; /* Adjusted approximate height */
     }
 }
+
+/* ---------------------------------------------------------------------------------- */
+/* Footer Layout with Flexbox - Spread Sections Across Full Width */
+/* ---------------------------------------------------------------------------------- */
+
+/* Main footer grid container - use Flexbox to spread sections */
+.footer-main .row.grid-gap {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+    width: 100% !important;
+    flex-wrap: wrap !important;
+}
+
+/* Ensure bootstrap column widths don't interfere with flex spacing on large screens */
+@media (min-width: 992px) {
+    .footer-main .row.grid-gap > .col-lg-2,
+    .footer-main .row.grid-gap > .col-lg-6 {
+        flex: 0 0 auto !important;
+        width: auto !important;
+        max-width: none !important;
+    }
+}
+
+/* Company section - ensure it stays left */
+.footer-main .row.grid-gap > .col-12:nth-child(1) {
+    margin-right: auto !important;
+}
+
+/* Resources section - stay in center */
+.footer-main .row.grid-gap > .col-12:nth-child(2) {
+    margin: 0 auto !important;
+}
+
+/* Contact Us section - align to far right */
+.footer-main .row.grid-gap > .col-12:nth-child(3) {
+    margin-left: auto !important;
+}
+
+/* Responsive: Stack vertically on mobile */
+@media (max-width: 768px) {
+    .footer-main .row.grid-gap {
+        flex-direction: column !important;
+        align-items: stretch !important;
+    }
+    
+    .footer-main .row.grid-gap > .col-12:nth-child(1),
+    .footer-main .row.grid-gap > .col-12:nth-child(2),
+    .footer-main .row.grid-gap > .col-12:nth-child(3) {
+        margin: 0 !important;
+        width: 100% !important;
+        margin-bottom: 2rem !important;
+    }
+}
